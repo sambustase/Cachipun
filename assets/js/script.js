@@ -38,10 +38,10 @@ for(var i = 1; i <=cantidad; i++) {
     }
 
     if (eleccionUsuario == 'Tijera' && eleccionComputadora == 'Papel' || eleccionUsuario == 'Piedra' && eleccionComputadora == 'Tijera' || eleccionUsuario == 'Papel' && eleccionComputadora == 'Piedra'){
-        alert("La computadora hizo  " + eleccionComputadora + " El ganador es  " + nombre); 
+        alert("Feliciades, Ganaste!!. La computadora hizo  " + eleccionComputadora); 
 
     }else if (eleccionUsuario == 'Papel' && eleccionComputadora == 'Tijera'  || eleccionUsuario == 'Tijera'  && eleccionComputadora == 'Piedra' || eleccionUsuario == 'Piedra' && eleccionComputadora == 'Papel'){
-            alert("La computadora hizo  " + eleccionComputadora + " El ganador es la computadora"); 
+            alert("Haz perdido!, La computadora hizo  " + eleccionComputadora + " El ganador es la computadora"); 
 
     }else if (eleccionUsuario == 'Papel' && eleccionComputadora == 'Papel'  || eleccionUsuario == 'Tijera'  && eleccionComputadora == 'Tijera' || eleccionUsuario == 'Piedra' && eleccionComputadora == 'Piedra'){
         alert("La computadora hizo  " + eleccionComputadora + " Es empate");
