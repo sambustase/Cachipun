@@ -3,26 +3,20 @@ let cantidad = parseInt(prompt("Ingrese La cantidad de veces que desea Jugar"));
 
 
 for(var i = 1; i <=cantidad; i++) {
-    let option = parseInt(prompt("Ingrese su elección donde Tijera = 0 , Piedra = 1 , Papel = 2"));
+    let option = prompt("Ingrese su elección Tijera, Piedra, Papel.").toLowerCase();
     let numAleatorio = Math.floor(Math.random()*3);
-
-    switch (option) {
-        case 0:
-            eleccionUsuario = 'Tijera';
-            
-            break;
-        case 1:
-            eleccionUsuario = 'Piedra';
-          
-            break;
-        case 2:
-            eleccionUsuario = 'Papel';
-           
-            break;
-        default:
-            eleccionUsuario = ' Valor no valido'
+    let eleccionUsuario;
+    
+    if (option === "tijera") {
+        eleccionUsuario = "Tijera";
+    } else if (option === "piedra") {
+        eleccionUsuario = "Piedra";
+    } else if (option === "papel") {
+        eleccionUsuario = "Papel";
+    } else {
+        alert('Valor no válido');
     }
-
+    
     switch (numAleatorio) {
         case 0:
             eleccionComputadora = 'Tijera';
